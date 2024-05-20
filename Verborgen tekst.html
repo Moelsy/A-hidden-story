@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Hello World</title>
+        
+        <!--Google fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+        <!-- jQuery CDN -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+        <style type="text/css">
+    
+        body
+        {
+        background: #000000; 
+        }
+
+        h1
+        {
+        text-align: center;
+        color: rgb(255, 255, 255);
+        font-family: Poetsen One;
+        font-size: 50px;
+        }
+
+        #showTextButton
+        {
+        display: block;
+        margin: 0 auto;
+        border-radius: 50px;
+        border: none;
+        background-color: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
+        padding: 10px;
+        text-align: center;
+        font-family: Radio Canada Big;
+        font-size: 15px;
+        }
+
+        #showTextButton:hover
+        {
+        background-color: rgb(0, 96, 122);
+        color: rgb(255, 255, 255);
+        border-radius: 50px;
+        }
+
+        p
+        {
+        text-align: center;
+        color: rgb(255, 255, 255);
+        font-family: Roboto Mono;
+        font-size: 12px;
+        }
+
+        #hiddenText
+        {
+        display: none;
+        }
+
+    </style>
+    </head>
+
+    <body>
+        <h1>This is a hidden story</h1>
+            <button id="showTextButton">I am curious</button>
+            <div id="hiddenText">
+                <p>
+                    In het stadje Byteville woonde Emma, een oude programmeur, 
+                    die haar kennis wilde doorgeven aan haar jonge leerling, Alex. 
+                    Ze had een klein programma geschreven, genaamd Spark, 
+                    dat ontworpen was om te leren en te groeien.
+                    <br>
+                    <br>
+                    Op een zonnige ochtend riep Emma Alex bij zich. 
+                    "Vandaag," zei ze, "zal Spark zijn eerste woorden leren." 
+                    Emma legde geduldig de basisprincipes van programmeren uit en na uren van oefening was het moment eindelijk daar.
+                    Emma typte de laatste regels code in en drukte op Enter. 
+                    Op het scherm verscheen de boodschap: "Hello, World!" 
+                    Spark had zijn eerste woorden geleerd.
+                    <br>
+                    <br>
+                    Emma glimlachte naar Alex. 
+                    "Onthoud dit moment," zei ze. "Elk groot avontuur begint met een kleine stap. 
+                    Vanaf die dag hielp Alex Spark verder te leren, en elk nieuw programma dat hij schreef, begon met dezelfde magische woorden. 
+                    Zo werd de erfenis van "Hello, World!" voortgezet.
+                </p>
+            </div>
+
+        <!--jQuery Script -->
+        <script
+        src="https://code.jquery.com/jquery-3.7.1.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function() 
+            {
+            $("#showTextButton").click(function() {
+            $("#hiddenText").toggle();
+            });
+            });
+        </script>
+    </body>
+</html>
